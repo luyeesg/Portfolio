@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #E6D6D6;
+    font-family: "Futura", "Ayuthaya";
+}
+
+.main {
+    text-align: center;
+    margin-top: 60rem;
+    margin-bottom: 40rem;
+}
+
+.main .heading {
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+.main .subheading {
+    font-family: "Ayuthaya";
+    font-size: 2.5rem;
+}
+
+.media {
+    margin-top: 40rem;
+    font-family: "Ayuthaya";
+    color: #656565;
+    font-size: 2rem;
+
+    animation: 3s out;
+}
+
+.media p, .media img{
+    margin-bottom: 2rem;
+}
+
+.mail p:nth-child(2) {
+    color: black;
+}
+
+.info .heading {
+    animation: 1s slideInLeft;
+}
+
+.info .subheading {
+    animation: 1s slideInRight;
+}
+
+/* Grip */
+
+.skills {
+    margin-bottom: 40rem;
+}
+
+.skills img{
+    justify-content: center;
+}
+
+.skills h2, .projects h2 {
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.skills-grip {
+    display: grid;
+    margin-top: 10rem;
+    grid-template-columns: 19rem 19rem 19rem;
+    column-gap: 5rem;
+    row-gap: 10rem;
+    justify-content: center;
+}
+
+.grip-logo {
+    text-align: center;
+    font-family: "Ayuthaya";
+    font-size: 2rem;
+}
+
+.grip-logo img {
+    padding-bottom: 2rem;
+
+    transition: all 1s;
+}
+
+.grip-logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Projects */
+.projects-grip {
+    display: grid;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    grid-template-columns: 50rem 50rem 50rem;
+    column-gap: 5rem;
+    row-gap: 10rem;
+    justify-content: center;
+}
+
+.grip-thumbnail {
+    text-align: center;
+}
+
+.grip-thumbnail img {
+    transition: all 0.5s;
+}
+
+.grip-thumbnail img:hover {
+    border-radius: 2.7rem;
+    box-shadow: 2px 2px 15px black;
+}
+
+.thumbnail-title {
+    color: black;
+    font-size: 4rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Media queries */
+
+@media (max-width:1630px) {
+    .projects-grip {
+        grid-template-columns: 50rem 50rem;
+    }
+}
+
+@media (max-width:1070px) {
+    .projects-grip {
+        grid-template-columns: 50rem;
+    }
+}
+
+@media (max-width:700px) {
+    .skills-grip {
+        grid-template-columns: 19rem 19rem;
+    }
+}
+
+@media (max-width:520px) {
+    .skills-grip {
+        grid-template-columns: 19rem;
+    }
+}
+
+/* Animations */
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-10rem);
+        opacity: 0;
+    }
+    to {transform: translateX(0);}
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(10rem);
+        opacity: 0;
+    }
+    to {transform: translateX(0);}
+}
+
+@keyframes out {
+    from {opacity: 0;}
+    to {}
+}

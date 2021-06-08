@@ -126,6 +126,14 @@ body {
     text-align: center;
 }
 
+#redux {
+    width: 20rem;
+}
+
+#mongo {
+    width: 20rem;
+}
+
 /* Media queries */
 
 @media (max-width:1630px) {

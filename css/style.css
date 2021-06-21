@@ -9,14 +9,15 @@ html {
 }
 
 body {
-    background-color: #E6D6D6;
+    background-color: #F4EEE4;
     font-family: "Futura", "Ayuthaya";
 }
 
 .main {
     text-align: center;
-    margin-top: 60rem;
+    padding-top: 60rem;
     margin-bottom: 40rem;
+    background-color: #332F2C;
 }
 
 .main .heading {
@@ -29,21 +30,23 @@ body {
     font-size: 2.5rem;
 }
 
-.media {
-    margin-top: 40rem;
-    font-family: "Ayuthaya";
-    color: #656565;
-    font-size: 2rem;
+.info {
+    color: #F4EEE4;
+}
 
+.media {
+    margin-top: 5rem;
     animation: 3s out;
+    padding-bottom: 47rem;
+}
+
+.contact {
+    display: inline-block;
+    margin-left: 3rem;
 }
 
 .media p, .media img{
     margin-bottom: 2rem;
-}
-
-.mail p:nth-child(2) {
-    color: black;
 }
 
 .info .heading {
@@ -58,6 +61,7 @@ body {
 
 .skills {
     margin-bottom: 40rem;
+    animation: 7s bottomToTop;
 }
 
 .skills img{
@@ -68,26 +72,20 @@ body {
     font-size: 4rem;
     font-weight: 500;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .skills-grip {
     display: grid;
     margin-top: 10rem;
-    grid-template-columns: 19rem 19rem 19rem;
+    grid-template-columns: 20rem 20rem 20rem;
     column-gap: 5rem;
     row-gap: 10rem;
     justify-content: center;
 }
 
-.grip-logo {
-    text-align: center;
-    font-family: "Ayuthaya";
-    font-size: 2rem;
-}
-
 .grip-logo img {
     padding-bottom: 2rem;
-
     transition: all 1s;
 }
 
@@ -95,12 +93,20 @@ body {
     transform: scale(1.1);
 }
 
+.skills-icons {
+    width: 20rem;
+}
+
+#js-icon{
+    width: 18rem;
+}
+
 /* Projects */
 .projects-grip {
     display: grid;
     margin-top: 10rem;
     margin-bottom: 10rem;
-    grid-template-columns: 50rem 50rem 50rem;
+    grid-template-columns: 20rem 20rem 20rem;
     column-gap: 5rem;
     row-gap: 10rem;
     justify-content: center;
@@ -110,39 +116,18 @@ body {
     text-align: center;
 }
 
-.grip-thumbnail img {
+.grip-thumbnail a img {
+    border-radius: 20rem;
     transition: all 0.5s;
 }
 
 .grip-thumbnail img:hover {
-    border-radius: 2.7rem;
-    box-shadow: 2px 2px 15px black;
-}
-
-.thumbnail-title {
-    color: black;
-    font-size: 4rem;
-    text-decoration: none;
-    text-align: center;
-}
-
-#redux {
-    width: 20rem;
-}
-
-#mongo {
-    width: 20rem;
+    box-shadow: 2px 2px 50px black;
 }
 
 /* Media queries */
 
-@media (max-width:1630px) {
-    .projects-grip {
-        grid-template-columns: 50rem 50rem;
-    }
-}
-
-@media (max-width:1070px) {
+@media (max-width:790px) {
     .projects-grip {
         grid-template-columns: 50rem;
     }
@@ -181,4 +166,12 @@ body {
 @keyframes out {
     from {opacity: 0;}
     to {}
+}
+
+@keyframes bottomToTop {
+    from {
+        transform: translateY(100rem);
+        opacity: 0;
+    }
+    to {transform: translateY(0);}
 }

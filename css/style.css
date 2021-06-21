@@ -106,7 +106,7 @@ body {
     display: grid;
     margin-top: 10rem;
     margin-bottom: 10rem;
-    grid-template-columns: 20rem 20rem 20rem;
+    grid-template-columns: 23rem 23rem 23rem;
     column-gap: 5rem;
     row-gap: 10rem;
     justify-content: center;
@@ -129,19 +129,35 @@ body {
 
 @media (max-width:790px) {
     .projects-grip {
-        grid-template-columns: 50rem;
+        grid-template-columns: 23rem;
     }
 }
 
 @media (max-width:700px) {
     .skills-grip {
-        grid-template-columns: 19rem 19rem;
+        grid-template-columns: 20rem 20rem;
     }
 }
 
 @media (max-width:520px) {
     .skills-grip {
-        grid-template-columns: 19rem;
+        grid-template-columns: 20rem;
+    }
+}
+
+@media (max-width:500px) {
+    .info .heading {
+        font-size: 3.5rem;
+    }
+    .info .subheading {
+        font-size: 2rem;
+    }
+    .main {
+        padding-top: 30rem;
+        margin-bottom: 20rem;
+    }
+    .skills {
+        margin-bottom: 20rem;
     }
 }
 

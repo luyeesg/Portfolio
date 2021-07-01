@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-dark-color: #332F2C;
+    --main-light-color: #F4EEE4;
+}
+
 html {
     font-size: 10px;
 }
 
 body {
-    background-color: #F4EEE4;
+    background-color: var(--main-light-color);
     font-family: "Futura", "Ayuthaya";
 }
 
@@ -17,7 +22,7 @@ body {
     text-align: center;
     padding-top: 60rem;
     margin-bottom: 40rem;
-    background-color: #332F2C;
+    background-color: var(--main-dark-color);
 }
 
 .main .heading {
@@ -31,7 +36,7 @@ body {
 }
 
 .info {
-    color: #F4EEE4;
+    color: var(--main-light-color);
 }
 
 .media {
@@ -78,7 +83,7 @@ body {
 .skills-grip {
     display: grid;
     margin-top: 10rem;
-    grid-template-columns: 20rem 20rem 20rem;
+    grid-template-columns: repeat(3, 20rem);
     column-gap: 5rem;
     row-gap: 10rem;
     justify-content: center;
@@ -106,7 +111,7 @@ body {
     display: grid;
     margin-top: 10rem;
     margin-bottom: 10rem;
-    grid-template-columns: 23rem 23rem 23rem;
+    grid-template-columns: repeat(3, 23rem);
     column-gap: 5rem;
     row-gap: 10rem;
     justify-content: center;
@@ -135,7 +140,7 @@ body {
 
 @media (max-width:700px) {
     .skills-grip {
-        grid-template-columns: 20rem 20rem;
+        grid-template-columns: repeat(2, 20rem)
     }
 }
 

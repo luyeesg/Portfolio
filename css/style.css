@@ -88,7 +88,12 @@ body {
 /* Grip */
 
 .skills {
+  display: none;
   margin-bottom: 40rem;
+}
+
+.skills-animation {
+  display: block;
   animation: 4s bottomToTop;
 }
 
@@ -131,6 +136,15 @@ body {
 }
 
 /* Projects */
+.projects {
+  display: none;
+}
+
+.projects-animation {
+  display: block;
+  animation: 2s bottomToTop;
+}
+
 .projects-grip {
   display: grid;
   margin-top: 10rem;
@@ -222,7 +236,7 @@ body {
 
 @keyframes bottomToTop {
   from {
-    transform: translateY(100rem);
+    /* transform: translateY(100rem); */
     opacity: 0;
   }
   to {

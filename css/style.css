@@ -15,7 +15,7 @@ html {
 
 body {
   background-color: var(--main-light-color);
-  font-family: "Futura", "Ayuthaya", Arial, Helvetica, sans-serif;
+  font-family: "Futura", "Ayuthaya", Helvetica, sans-serif;
 }
 
 .main {
@@ -94,14 +94,20 @@ body {
 
 .skills-animation {
   display: block;
-  animation: 4s bottomToTop;
 }
 
 .skills img {
   justify-content: center;
 }
 
-.skills h2,
+.skills h2 {
+  display: none;
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .projects h2 {
   font-size: 4rem;
   font-weight: 500;
@@ -147,9 +153,13 @@ body {
   display: none;
 }
 
+.projects-text {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
 .projects-animation {
   display: block;
-  animation: 2s bottomToTop;
 }
 
 .projects-grip {
@@ -176,6 +186,14 @@ body {
 }
 
 /* Media queries */
+@media (max-width: 1080px) {
+  .skills h2{
+    display: block;
+  }
+  #text-path {
+    display: none;
+  }
+}
 
 @media (max-width: 790px) {
   .projects-grip {
@@ -243,7 +261,8 @@ body {
 
 @keyframes bottomToTop {
   from {
-    /* transform: translateY(100rem); */
+    transform: translateY(100rem);
+    transform: scale(1.5);
     opacity: 0;
   }
   to {

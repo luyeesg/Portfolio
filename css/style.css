@@ -15,7 +15,7 @@ html {
 
 body {
   background-color: var(--main-light-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .main {
@@ -154,11 +154,6 @@ body {
   display: none;
 }
 
-.projects-text {
-  font-size: 20px;
-  margin-top: 10px;
-}
-
 .projects-animation {
   display: block;
 }
@@ -171,6 +166,26 @@ body {
   column-gap: 5rem;
   row-gap: 10rem;
   justify-content: center;
+}
+
+.projects-button {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 20px 40px;
+  border-radius: 60px;
+  border-color: transparent;
+  background-color: white;
+  cursor: pointer;
+}
+
+.projects-button:hover {
+  border: 1px solid black;
+}
+
+.projects-button a {
+  color: black;
+  text-decoration: none;
 }
 
 .grip-thumbnail {
@@ -188,7 +203,7 @@ body {
 
 /* Media queries */
 @media (max-width: 1080px) {
-  .skills h2{
+  .skills h2 {
     display: block;
   }
   #text-path {

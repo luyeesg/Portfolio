@@ -2,243 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&family=Urbanist:wght@100;200;300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Yerovy Espitia</title>
   </head>
-
   <body>
-    <div class="main">
-      <div class="info">
-        <h1 class="heading">I'm Yerovy Espitia,</h1>
-        <p class="subheading">a Front-end Developer & Web Designer</p>
+    <div class="container">
+      <div class="flex-about">
+        <div class="about">
+          <p>Hey ✌️, I'm</p>
+          <div class="title">
+            <h1>Yerovy Espitia</h1>
+          </div>
+          <p>
+            a front-end developer & web designer based in Barranquilla, Colombia
+          </p>
+        </div>
       </div>
-      <div class="media">
-        <div class="contact">
-          <a href="https://github.com/yerovyespitia" target="_blank"
-            ><img src="/img/github.png" alt="github" title="Github"
-          /></a>
-        </div>
-        <div class="contact">
-          <a href="mailto:luyeesgar@gmail.com"
-            ><img src="/img/email.png" alt="email" title="Mail me"
-          /></a>
-        </div>
-        <div class="contact">
-          <a href="https://www.linkedin.com/in/yerovyespitia/" target="_blank"
-            ><img src="/img/linkedin.png" alt="email" title="Linkedin"
-          /></a>
-        </div>
-        <div class="download-button">
-          <a href="./img/CV.pdf" download="Resume">
-            <button class="button-cv">Download CV</button>
-          </a>
-        </div>
+      <div class="skills">
+        <h2>Skills</h2>
       </div>
     </div>
-
-    <div id="skills" class="skills">
-      <h2>Skills</h2>
-      <svg
-        id="text-container"
-        viewBox="0 0 1000 200"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          id="text-curve"
-          d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0"
-          fill="none"
-        />
-        <text y="40" font-size="32">
-          <textPath id="text-path" href="#text-curve" startOffset="450">
-            Skills
-          </textPath>
-        </text>
-      </svg>
-      <div class="skills-grip">
-        <div class="grip-logo">
-          <img
-            class="skills-icons"
-            src="/img/html.png"
-            alt="html"
-            title="HTML"
-          />
-        </div>
-        <div class="grip-logo">
-          <img class="skills-icons" src="/img/css.png" alt="css" title="CSS" />
-        </div>
-        <div class="grip-logo">
-          <img
-            class="skills-icons"
-            id="js-icon"
-            src="/img/js.png"
-            alt="js"
-            title="Javascript"
-          />
-        </div>
-        <div class="grip-logo">
-          <img
-            class="skills-icons"
-            src="/img/sass.png"
-            alt="sass"
-            title="Sass"
-          />
-        </div>
-        <div class="grip-logo">
-          <img
-            class="skills-icons"
-            src="/img/bootstrap.png"
-            alt="bootstrap"
-            title="Bootstrap"
-          />
-        </div>
-        <div class="grip-logo">
-          <img class="skills-icons" src="/img/git.png" alt="git" title="Git" />
-        </div>
-        <div class="grip-logo">
-          <img
-            class="skills-icons"
-            src="/img/react.png"
-            alt="react"
-            title="React.js"
-          />
-        </div>
-        <div class="grip-logo">
-          <img
-            class="skills-icons"
-            src="/img/redux.png"
-            alt="redux"
-            title="Redux"
-          />
-        </div>
-        <div class="grip-logo">
-          <img
-            class="skills-icons"
-            src="/img/typescript.png"
-            alt="typescript"
-            title="Typescript"
-          />
-        </div>
-        <div class="grip-logo">
-          <img
-            class="skills-icons"
-            src="/img/mongodb.png"
-            alt="mongodb"
-            title="MongoDB"
-          />
-        </div>
-        <div class="grip-logo">
-          <img
-            class="skills-icons"
-            src="/img/mysql.png"
-            alt="mysql"
-            title="mysql"
-          />
-        </div>
-        <div class="grip-logo">
-          <img
-            class="skills-icons"
-            src="/img/ps.png"
-            alt="ps"
-            title="Photoshop"
-          />
-        </div>
-        <div class="grip-logo">
-          <img
-            class="skills-icons"
-            src="/img/xd.png"
-            alt="xd"
-            title="Adobe XD"
-          />
-        </div>
-      </div>
-    </div>
-
-    <div id="projects" class="projects">
-      <h2>Projects</h2>
-      <div class="projects-grip">
-        <div class="grip-thumbnail">
-          <a href="https://www.counterpokemon.com" target="_blank">
-            <img
-              src="/img/pokedex.png"
-              alt="counter pokemon"
-              title="Counter Pokémon"
-            />
-          </a>
-          <button class="projects-button">
-            <a
-              href="https://github.com/yerovyespitia/counterpokemon/"
-              target="_blank"
-              >View Source Code</a
-            >
-          </button>
-        </div>
-        <div class="grip-thumbnail">
-          <a href="https://anime-streaming-app.netlify.app" target="_blank">
-            <img
-              src="/img/mob.png"
-              alt="Anime Streaming"
-              title="Anime Streaming"
-            />
-          </a>
-          <button class="projects-button">
-            <a
-              href="https://github.com/yerovyespitia/anime-streaming-app/"
-              target="_blank"
-              >View Source Code</a
-            >
-          </button>
-        </div>
-        <div class="grip-thumbnail">
-          <a href="https://app-blog-mern.herokuapp.com" target="_blank">
-            <img
-              src="/img/Blog.png"
-              alt="React Blog Mern"
-              title="React Blog Mern"
-            />
-          </a>
-          <button class="projects-button">
-            <a
-              href="https://github.com/yerovyespitia/react-blog"
-              target="_blank"
-              >View Source Code</a
-            >
-          </button>
-        </div>
-        <div class="grip-thumbnail">
-          <a href="https://redpanda-app.netlify.app" target="_blank">
-            <img src="/img/redpanda.png" alt="Redpanda" title="Redpanda" />
-          </a>
-          <button class="projects-button">
-            <a href="https://github.com/yerovyespitia/redpanda/" target="_blank"
-              >View Source Code</a
-            >
-          </button>
-        </div>
-        <div class="grip-thumbnail">
-          <a href="https://yt-timestamps-app.netlify.app" target="_blank">
-            <img
-              src="/img/yt-timestamps.png"
-              alt="yt-timestamps"
-              title="yt-timestamps"
-            />
-          </a>
-          <button class="projects-button">
-            <a
-              href="https://github.com/yerovyespitia/yt-timestamps/"
-              target="_blank"
-              >View Source Code</a
-            >
-          </button>
-        </div>
-      </div>
-    </div>
-    <script src="./js/index.js"></script>
   </body>
 </html>

@@ -24,15 +24,17 @@ body {
 .about > p {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  /* font-size: 30px; */
   font-size: clamp(18px, 6vw, 30px);
   margin: 15px 0;
   animation: 1s slideInRight;
 }
 
+.about p:nth-child(1) {
+  animation: 1s slideInLeft;
+}
+
 .title > h1 {
   font-family: "Oxygen", Helvetica, sans-serif;
-  /* font-size: 120px; */
   font-size: clamp(60px, 11vw, 120px);
   font-weight: bold;
   animation: 2s out;

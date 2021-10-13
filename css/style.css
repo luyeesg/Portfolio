@@ -135,7 +135,7 @@ a > button {
     brightness(102%) contrast(102%);
 }
 
-.contact > a {
+.contact > a, .project-icons > a {
   text-decoration: none;
 }
 

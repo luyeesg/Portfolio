@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  margin: 0 15vw;
+  margin: 0 5vw;
 }
 
 .flex-about {
@@ -45,6 +45,7 @@ a > button {
   color: white;
   text-decoration: none;
   cursor: pointer;
+  animation: 2s out;
 }
 
 .title > h1 {
@@ -54,12 +55,15 @@ a > button {
   animation: 2s out;
 }
 
-.skills {
+.skills,
+.projects,
+.contact {
   margin-bottom: 100px;
 }
 
 .skills > h2,
-.projects > h2 {
+.projects > h2,
+.contact > h2 {
   font-family: "Oxygen Mono", monospace;
   font-size: 40px;
   letter-spacing: 3px;
@@ -90,7 +94,7 @@ a > button {
 
 .grid-projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 40px;
 }
 
@@ -107,7 +111,7 @@ a > button {
 .project > h3 {
   font-family: "Oxygen", monospace;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 28px;
   color: white;
 }
 
@@ -126,6 +130,18 @@ a > button {
 .project-icons a > img {
   width: 35px;
   margin: 0 5px;
+  cursor: pointer;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+    brightness(102%) contrast(102%);
+}
+
+.contact > a {
+  text-decoration: none;
+}
+
+.contact a > img {
+  width: 50px;
+  margin: 0 20px;
   cursor: pointer;
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
     brightness(102%) contrast(102%);

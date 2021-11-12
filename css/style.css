@@ -72,12 +72,14 @@ a > button:hover {
   font-size: 40px;
   letter-spacing: 3px;
   color: white;
-  margin: 30px 0;
+  margin: 50px 0;
+  text-align: center;
 }
 
 .grid-skills {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  justify-content: center;
   gap: 20px;
 }
 
@@ -98,7 +100,8 @@ a > button:hover {
 
 .grid-projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 500px));
+  justify-content: center;
   gap: 40px;
 }
 
@@ -149,6 +152,10 @@ a > button:hover {
 .skill-icon:not(:hover) {
   transition: all ease-in 0.5s;
   transform: scale(1);
+}
+
+.contact {
+  text-align: center;
 }
 
 .contact > a,

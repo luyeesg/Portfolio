@@ -112,6 +112,11 @@ a > button:hover {
   width: auto;
   height: 380px;
   background-color: #5b5fc3;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .project > h3 {
@@ -128,7 +133,6 @@ a > button:hover {
 
 .project-info > p {
   font-family: "Oxygen", monospace;
-  font-weight: bold;
   font-size: 18px;
   color: white;
 }

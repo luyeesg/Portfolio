@@ -176,6 +176,7 @@ a > button:hover {
 }
 
 .blog-item {
+  width: 100%;
   padding: 20px;
   background-color: #293143;
   border-radius: 8px;
@@ -187,8 +188,7 @@ a > button:hover {
 }
 
 .blog-img {
-  max-width: 472px;
-  max-height: 329px;
+  width: 100%;
   object-fit: cover;
   border-radius: 8px;
 }

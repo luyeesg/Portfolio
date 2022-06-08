@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/style.css" />
@@ -27,200 +32,253 @@
           </a>
         </div>
       </div>
-      <section class="skills">
-        <h2>Skills</h2>
-        <div class="grid-skills">
-          <div class="skill-icon">
-            <img src="/img/html.png" alt="HTML5" title="HTML5" />
-          </div>
-          <div class="skill-icon">
-            <img src="/img/css.png" alt="CSS3" title="CSS3" />
-          </div>
-          <div class="skill-icon">
-            <img src="/img/js.png" alt="JS" title="Javascript" />
-          </div>
-          <div class="skill-icon">
-            <img src="/img/react.png" alt="React" title="React.js" />
-          </div>
-          <div class="skill-icon">
-            <img src="/img/nextjs.png" alt="Next" title="Next.js" />
-          </div>
-          <div class="skill-icon">
-            <img src="/img/tailwind.png" alt="Tailwind" title="Tailwind CSS" />
-          </div>
-          <div class="skill-icon">
-            <img src="/img/ts.png" alt="Ts" title="Typescript" />
-          </div>
-          <div class="skill-icon">
-            <img src="/img/redux.png" alt="Redux" title="Redux" />
-          </div>
-          <div class="skill-icon">
-            <img src="/img/sql.png" alt="SQL" title="MySQL" />
-          </div>
-          <div class="skill-icon">
-            <img src="/img/mongo.png" alt="Mongo" title="MongoDB" />
-          </div>
-          <div class="skill-icon">
-            <img src="/img/nodejs.svg" alt="Node.js" title="Node.js" />
-          </div>
-          <div class="skill-icon">
-            <img src="/img/git.png" alt="Git" title="Git" />
-          </div>
-          <div class="skill-icon">
-            <img src="/img/ps.png" alt="PS" title="Photoshop" />
-          </div>
-          <div class="skill-icon">
-            <img src="/img/xd.png" alt="XD" title="Adobe XD" />
-          </div>
+      <section
+        class="skills-container"
+        data-aos="fade-in"
+        data-aos-duration="4000"
+        data-aos-delay="400"
+      >
+        <div class="skills">
+          <h2>Skills</h2>
         </div>
-      </section>
-      <section class="projects">
-        <h2>Projects</h2>
-        <div class="grid-projects">
-          <div class="project" style="background-color: #5bc38a">
-            <h3>State of Mac</h3>
-            <div class="project-info">
-              <p>Next.js, Redux, Node.js & MongoDB</p>
+        <div class="skill-icons">
+          <div class="grid-skills">
+            <div class="skill-icon">
+              <img src="/img/html.png" alt="HTML5" title="HTML5" />
             </div>
-            <div class="project-icons">
-              <a
-                href="https://github.com/yerovyespitia/StateofMac"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="/img/github.svg"
-                  alt="Github"
-                  title="See Repository"
-                />
-              </a>
-              <a
-                href="https://www.stateofmac.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="/img/open.svg" alt="Open" title="See Project" />
-              </a>
+            <div class="skill-icon">
+              <img src="/img/css.png" alt="CSS3" title="CSS3" />
             </div>
-          </div>
-          <div class="project">
-            <h3>Counter Pokémon</h3>
-            <div class="project-info">
-              <p>React, Redux & PokeAPI</p>
+            <div class="skill-icon">
+              <img src="/img/js.png" alt="JS" title="Javascript" />
             </div>
-            <div class="project-icons">
-              <a
-                href="https://github.com/yerovyespitia/counterpokemon/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="/img/github.svg"
-                  alt="Github"
-                  title="See Repository"
-                />
-              </a>
-              <a
-                href="https://www.counterpokemon.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="/img/open.svg" alt="Open" title="See Project" />
-              </a>
+            <div class="skill-icon">
+              <img src="/img/react.png" alt="React" title="React.js" />
             </div>
-          </div>
-          <div class="project" style="background-color: #835bc3">
-            <h3>Disney Plus Clone</h3>
-            <div class="project-info">
-              <p>Next.js & Tailwind CSS</p>
+            <div class="skill-icon">
+              <img src="/img/nextjs.png" alt="Next" title="Next.js" />
             </div>
-            <div class="project-icons">
-              <a
-                href="https://github.com/yerovyespitia/disney-plus-clone"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="/img/github.svg"
-                  alt="Github"
-                  title="See Repository"
-                />
-              </a>
-              <a
-                href="https://disney-plus-clone-2adnb06l2-yerovyespitia.vercel.app"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="/img/open.svg" alt="Open" title="See Project" />
-              </a>
+            <div class="skill-icon">
+              <img
+                src="/img/tailwind.png"
+                alt="Tailwind"
+                title="Tailwind CSS"
+              />
             </div>
-          </div>
-          <div class="project" style="background-color: #5baec3">
-            <h3>Anime Streaming</h3>
-            <div class="project-info">
-              <p>React, Node.js & MongoDB</p>
+            <div class="skill-icon">
+              <img src="/img/ts.png" alt="Ts" title="Typescript" />
             </div>
-            <div class="project-icons">
-              <a
-                href="https://github.com/yerovyespitia/anime-streaming"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="/img/github.svg"
-                  alt="Github"
-                  title="See Repository"
-                />
-              </a>
-              <a
-                href="https://anime-streaming.netlify.app"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="/img/open.svg" alt="Open" title="See Project" />
-              </a>
+            <div class="skill-icon">
+              <img src="/img/redux.png" alt="Redux" title="Redux" />
+            </div>
+            <div class="skill-icon">
+              <img src="/img/sql.png" alt="SQL" title="MySQL" />
+            </div>
+            <div class="skill-icon">
+              <img src="/img/mongo.png" alt="Mongo" title="MongoDB" />
+            </div>
+            <div class="skill-icon">
+              <img src="/img/nodejs.svg" alt="Node.js" title="Node.js" />
+            </div>
+            <div class="skill-icon">
+              <img src="/img/git.png" alt="Git" title="Git" />
+            </div>
+            <div class="skill-icon">
+              <img src="/img/ps.png" alt="PS" title="Photoshop" />
+            </div>
+            <div class="skill-icon">
+              <img src="/img/xd.png" alt="XD" title="Adobe XD" />
             </div>
           </div>
         </div>
       </section>
-      <section class="blog">
-        <h2>My blog</h2>
-        <div class="blog-grid">
-          <a href="/about-state-of-mac.html">
-            <div class="blog-item">
-              <div class="blog-img-container">
-                <img class="blog-img" src="/img/som.png" alt="som" />
+      <section
+        class="projects-container"
+        data-aos="fade-in"
+        data-aos-duration="4000"
+        data-aos-delay="400"
+      >
+        <div class="projects">
+          <h2>Projects</h2>
+        </div>
+        <div class="project-elements">
+          <div class="grid-projects">
+            <div class="project" style="background-color: #5bc38a">
+              <h3>State of Mac</h3>
+              <div class="project-info">
+                <p>Next.js, Redux, Node.js & MongoDB</p>
               </div>
-              <div class="blog-info-container">
-                <h3 class="blog-info-title">About State of Mac and its goal</h3>
-                <p class="blog-info-date">Publish March 16, 2022</p>
-                <p class="blog-info-desc">
-                  Back in 2020, Apple surprised the world in the WWDC by
-                  announcing the transition away from using Intel in favor of
-                  Apple silicon...
-                </p>
+              <div class="project-icons">
+                <a
+                  href="https://github.com/yerovyespitia/StateofMac"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/img/github.svg"
+                    alt="Github"
+                    title="See Repository"
+                  />
+                </a>
+                <a
+                  href="https://www.stateofmac.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="/img/open.svg" alt="Open" title="See Project" />
+                </a>
               </div>
             </div>
+            <div class="project" style="background-color: #5baec3">
+              <h3>Anime Streaming</h3>
+              <div class="project-info">
+                <p>React, Node.js & MongoDB</p>
+              </div>
+              <div class="project-icons">
+                <a
+                  href="https://github.com/yerovyespitia/anime-streaming"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/img/github.svg"
+                    alt="Github"
+                    title="See Repository"
+                  />
+                </a>
+                <a
+                  href="https://anime-streaming.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="/img/open.svg" alt="Open" title="See Project" />
+                </a>
+              </div>
+            </div>
+            <div class="project">
+              <h3>Counter Pokémon</h3>
+              <div class="project-info">
+                <p>React, Redux & PokeAPI</p>
+              </div>
+              <div class="project-icons">
+                <a
+                  href="https://github.com/yerovyespitia/counterpokemon/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/img/github.svg"
+                    alt="Github"
+                    title="See Repository"
+                  />
+                </a>
+                <a
+                  href="https://www.counterpokemon.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="/img/open.svg" alt="Open" title="See Project" />
+                </a>
+              </div>
+            </div>
+            <div class="project" style="background-color: #835bc3">
+              <h3>Disney Plus Clone</h3>
+              <div class="project-info">
+                <p>Next.js & Tailwind CSS</p>
+              </div>
+              <div class="project-icons">
+                <a
+                  href="https://github.com/yerovyespitia/disney-plus-clone"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/img/github.svg"
+                    alt="Github"
+                    title="See Repository"
+                  />
+                </a>
+                <a
+                  href="https://disney-plus-clone-2adnb06l2-yerovyespitia.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="/img/open.svg" alt="Open" title="See Project" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="blog-container"
+        data-aos="fade-in"
+        data-aos-duration="4000"
+        data-aos-delay="400"
+      >
+        <div class="blog">
+          <h2>My blog</h2>
+        </div>
+        <div class="blog-elements">
+          <div class="blog-grid">
+            <a href="/about-state-of-mac.html">
+              <div class="blog-item">
+                <div class="blog-img-container">
+                  <img class="blog-img" src="/img/som.png" alt="som" />
+                </div>
+                <div class="blog-info-container">
+                  <h3 class="blog-info-title">
+                    About State of Mac and its goal
+                  </h3>
+                  <p class="blog-info-date">Publish March 16, 2022</p>
+                  <p class="blog-info-desc">
+                    Back in 2020, Apple surprised the world in the WWDC by
+                    announcing the transition away from using Intel in favor of
+                    Apple silicon...
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section
+        class="contact-container"
+        data-aos="fade-in"
+        data-aos-duration="4000"
+        data-aos-delay="400"
+      >
+        <div class="contact">
+          <h2>Contact Me</h2>
+        </div>
+        <div class="social-media">
+          <a
+            href="https://github.com/yerovyespitia"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/img/github.svg" alt="Github" title="Github" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/yerovyespitia/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/img/linkedin.svg" alt="Linkedin" title="Linkedin" />
+          </a>
+          <a
+            href="https://twitter.com/yerovyespitia"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/img/twitter.svg" alt="Twitter" title="Twitter" />
           </a>
         </div>
       </section>
-      <section class="contact">
-        <h2>Contact Me</h2>
-        <a
-          href="https://github.com/yerovyespitia"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="/img/github.svg" alt="Github" title="Github" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/yerovyespitia/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="/img/linkedin.svg" alt="Linkedin" title="Linkedin" />
-        </a>
-      </section>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
   </body>
 </html>

@@ -6,279 +6,323 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap"
-      rel="stylesheet"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/apple-touch-icon.png"
     />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/img/site.webmanifest" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Yerovy Espitia</title>
   </head>
-  <body>
-    <div class="container">
-      <div class="flex-about">
-        <div class="about">
-          <p>Hey ✌️, I'm</p>
-          <div class="title">
-            <h1>Yerovy Espitia</h1>
-          </div>
-          <p>a front-end developer based in Colombia</p>
-          <a href="/img/CV.pdf" target="_blank" rel="noopener noreferrer">
-            <button>Resume</button>
-          </a>
-        </div>
-      </div>
-      <section
-        class="skills-container"
-        data-aos="fade-in"
-        data-aos-duration="4000"
-        data-aos-delay="400"
+  <body class="bg-[#04293A]">
+    <!-- Navbar -->
+    <header
+      class="flex justify-end flex-col h-60 lg:flex-row text-white lg:h-16 items-center text-lg font-medium font-['Roboto']"
+    >
+      <a href="#skills" class="my-2 mx-6 hover:underline">Skills</a>
+      <a href="#projects" class="my-2 mx-6 hover:underline">Projects</a>
+      <a href="#blog" class="my-2 mx-6 hover:underline">My Blog</a>
+      <a href="#contact" class="my-2 mx-6 hover:underline">Contact Me</a>
+      <a
+        href="/img/CV.pdf"
+        class="my-2 mx-6 rounded-lg border px-4 py-2 border-white hover:bg-white hover:text-black"
+        >Resume</a
       >
-        <div class="skills">
+    </header>
+    <main
+      class="flex justify-center items-center flex-col max-w-6xl m-auto p-10"
+    >
+      <section class="h-screen flex justify-center items-start flex-col">
+        <div class="text-[#F6E3C5] text-lg my-4 font-medium">
+          <span>Hey, ✌️ I'm</span>
+        </div>
+        <div class="text-[#F6E3C5] text-8xl my-4 font-bold font-['Oxygen']">
+          <span>Yerovy Espitia.</span>
+        </div>
+        <div class="text-[#A0D995] text-6xl my-4 font-bold font-['Oxygen']">
+          <span>I build great experiences for the web.</span>
+        </div>
+        <div class="text-gray-300 text-xl my-4">
+          <span
+            >I'm a self-taught front-end developer that like building a good
+            experience for users.</span
+          >
+        </div>
+      </section>
+      <!-- Skills -->
+      <section class="my-10 pb-32 w-full" id="skills">
+        <div class="text-white text-4xl my-4 font-bold font-['Oxygen']">
           <h2>Skills</h2>
         </div>
-        <div class="skill-icons">
-          <div class="grid-skills">
-            <div class="skill-icon">
-              <img src="/img/html.png" alt="HTML5" title="HTML5" />
-            </div>
-            <div class="skill-icon">
-              <img src="/img/css.png" alt="CSS3" title="CSS3" />
-            </div>
-            <div class="skill-icon">
-              <img src="/img/js.png" alt="JS" title="Javascript" />
-            </div>
-            <div class="skill-icon">
-              <img src="/img/react.png" alt="React" title="React.js" />
-            </div>
-            <div class="skill-icon">
-              <img src="/img/nextjs.png" alt="Next" title="Next.js" />
-            </div>
-            <div class="skill-icon">
-              <img
-                src="/img/tailwind.png"
-                alt="Tailwind"
-                title="Tailwind CSS"
-              />
-            </div>
-            <div class="skill-icon">
-              <img src="/img/ts.png" alt="Ts" title="Typescript" />
-            </div>
-            <div class="skill-icon">
-              <img src="/img/redux.png" alt="Redux" title="Redux" />
-            </div>
-            <div class="skill-icon">
-              <img src="/img/sql.png" alt="SQL" title="MySQL" />
-            </div>
-            <div class="skill-icon">
-              <img src="/img/mongo.png" alt="Mongo" title="MongoDB" />
-            </div>
-            <div class="skill-icon">
-              <img src="/img/nodejs.svg" alt="Node.js" title="Node.js" />
-            </div>
-            <div class="skill-icon">
-              <img src="/img/git.png" alt="Git" title="Git" />
-            </div>
-            <div class="skill-icon">
-              <img src="/img/ps.png" alt="PS" title="Photoshop" />
-            </div>
-            <div class="skill-icon">
-              <img src="/img/xd.png" alt="XD" title="Adobe XD" />
-            </div>
-          </div>
+        <div class="flex flex-wrap items-center text-white text-lg">
+          <img
+            class="w-20 m-2 hover:scale-105"
+            src="/img/react.png"
+            alt="react"
+            title="React.js"
+          />
+          <img
+            class="w-20 m-2 hover:scale-105"
+            src="/img/nextjs.png"
+            alt="next"
+            title="Next.js"
+          />
+          <img
+            class="w-20 m-2 hover:scale-105"
+            src="/img/ts.png"
+            alt="typescript"
+            title="Typescript"
+          />
+          <img
+            class="w-20 m-2 hover:scale-105"
+            src="/img/tailwind.png"
+            alt="tailwindcss"
+            title="TailwindCSS"
+          />
+          <img
+            class="w-20 m-2 hover:scale-105"
+            src="/img/redux.png"
+            alt="reudx"
+            title="Redux"
+          />
+          <img
+            class="w-20 m-2 hover:scale-105"
+            src="/img/nodejs.svg"
+            alt="node"
+            title="Node.js"
+          />
+          <img
+            class="w-20 m-2 hover:scale-105"
+            src="/img/mongo.png"
+            alt="mongo"
+            title="MongoDB"
+          />
+          <img
+            class="w-20 m-2 hover:scale-105"
+            src="/img/sql.png"
+            alt="sql"
+            title="MySQL"
+          />
+          <img
+            class="w-20 m-2 hover:scale-105"
+            src="/img/git.png"
+            alt="git"
+            title="Git"
+          />
+          <img
+            class="w-20 m-2 hover:scale-105"
+            src="/img/ps.png"
+            alt="ps"
+            title="Photoshop"
+          />
+          <img
+            class="w-20 m-2 hover:scale-105"
+            src="/img/xd.png"
+            alt="xd"
+            title="Adobe XD"
+          />
         </div>
       </section>
-      <section
-        class="projects-container"
-        data-aos="fade-in"
-        data-aos-duration="4000"
-        data-aos-delay="400"
-      >
-        <div class="projects">
+      <!-- Projects -->
+      <section class="my-10 pb-32 w-full" id="projects">
+        <div class="text-white text-4xl my-4 font-bold font-['Oxygen']">
           <h2>Projects</h2>
         </div>
-        <div class="project-elements">
-          <div class="grid-projects">
-            <div class="project" style="background-color: #5bc38a">
-              <h3>State of Mac</h3>
-              <div class="project-info">
-                <p>Next.js, Redux, Node.js & MongoDB</p>
-              </div>
-              <div class="project-icons">
-                <a
-                  href="https://github.com/yerovyespitia/StateofMac"
-                  target="_blank"
-                  rel="noopener noreferrer"
+        <div
+          class="flex justify-center flex-wrap lg:flex-nowrap items-center gap-3"
+        >
+          <div
+            class="hover:border-white hover:border drop-shadow-2xl flex justify-center flex-col w-full items-center h-[350px] bg-green-800 rounded-xl cursor-pointer"
+          >
+            <p class="text-white font-bold text-2xl font-['Roboto'] uppercase">
+              State of Mac
+            </p>
+            <p class="p-2 text-white text-base font-medium">
+              Next, Sass, Redux, Node, MongoDB
+            </p>
+            <div
+              class="flex filter sepia-0 invert saturate-0 hue-rotate-[320deg] brightness-[102%] contrast-[101%]"
+            >
+              <a
+                class="px-1"
+                href="https://github.com/yerovyespitia/StateofMac"
+                target="_blank"
+              >
+                <img src="/img/github.svg" alt="source code" />
+              </a>
+              <a class="px-1" href="https://www.stateofmac.com" target="_blank">
+                <svg
+                  width="30"
+                  height="30"
+                  viewbox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <img
-                    src="/img/github.svg"
-                    alt="Github"
-                    title="See Repository"
-                  />
-                </a>
-                <a
-                  href="https://www.stateofmac.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="/img/open.svg" alt="Open" title="See Project" />
-                </a>
-              </div>
+                  <path
+                    d="M8 7C8 6.44772 8.44772 6 9 6L17 6C17.5523 6 18 6.44772 18 7V15C18 15.5523 17.5523 16 17 16C16.4477 16 16 15.5523 16 15V9.41421L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L14.5858 8L9 8C8.44772 8 8 7.55228 8 7Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
             </div>
-            <div class="project" style="background-color: #5baec3">
-              <h3>Anime Streaming</h3>
-              <div class="project-info">
-                <p>React, Node.js & MongoDB</p>
-              </div>
-              <div class="project-icons">
-                <a
-                  href="https://github.com/yerovyespitia/anime-streaming"
-                  target="_blank"
-                  rel="noopener noreferrer"
+          </div>
+          <div
+            class="hover:border-white hover:border drop-shadow-2xl flex justify-center flex-col items-center w-full h-[350px] bg-blue-800 rounded-xl cursor-pointer"
+          >
+            <p class="text-white font-bold text-2xl font-['Roboto'] uppercase">
+              Anime Streaming
+            </p>
+            <p class="p-2 text-white text-base font-medium">
+              React, Tailwind, Node, MongoDB
+            </p>
+            <div
+              class="flex filter sepia-0 invert saturate-0 hue-rotate-[320deg] brightness-[102%] contrast-[101%]"
+            >
+              <a
+                class="px-1"
+                href="https://github.com/yerovyespitia/anime-streaming"
+                target="_blank"
+              >
+                <img src="/img/github.svg" alt="source code" />
+              </a>
+              <a
+                class="px-1"
+                href="https://anime-streaming.netlify.app"
+                target="_blank"
+              >
+                <svg
+                  width="30"
+                  height="30"
+                  viewbox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <img
-                    src="/img/github.svg"
-                    alt="Github"
-                    title="See Repository"
-                  />
-                </a>
-                <a
-                  href="https://anime-streaming.netlify.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="/img/open.svg" alt="Open" title="See Project" />
-                </a>
-              </div>
+                  <path
+                    d="M8 7C8 6.44772 8.44772 6 9 6L17 6C17.5523 6 18 6.44772 18 7V15C18 15.5523 17.5523 16 17 16C16.4477 16 16 15.5523 16 15V9.41421L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L14.5858 8L9 8C8.44772 8 8 7.55228 8 7Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
             </div>
-            <div class="project">
-              <h3>Counter Pokémon</h3>
-              <div class="project-info">
-                <p>React, Redux & PokeAPI</p>
-              </div>
-              <div class="project-icons">
-                <a
-                  href="https://github.com/yerovyespitia/counterpokemon/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+          </div>
+          <div
+            class="hover:border-white hover:border drop-shadow-2xl flex justify-center flex-col items-center w-full h-[350px] bg-red-800 rounded-xl cursor-pointer"
+          >
+            <p class="text-white font-bold text-2xl font-['Roboto'] uppercase">
+              Disney Plus Clone
+            </p>
+            <p class="p-2 text-white text-base font-medium">Next, Tailwind</p>
+            <div
+              class="flex filter sepia-0 invert saturate-0 hue-rotate-[320deg] brightness-[102%] contrast-[101%]"
+            >
+              <a
+                class="px-1"
+                href="https://github.com/yerovyespitia/disney-plus-clone"
+                target="_blank"
+              >
+                <img src="/img/github.svg" alt="source code" />
+              </a>
+              <a
+                class="px-1"
+                href="https://disney-plus-clone-2adnb06l2-yerovyespitia.vercel.app"
+                target="_blank"
+              >
+                <svg
+                  width="30"
+                  height="30"
+                  viewbox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <img
-                    src="/img/github.svg"
-                    alt="Github"
-                    title="See Repository"
-                  />
-                </a>
-                <a
-                  href="https://www.counterpokemon.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="/img/open.svg" alt="Open" title="See Project" />
-                </a>
-              </div>
-            </div>
-            <div class="project" style="background-color: #835bc3">
-              <h3>Disney Plus Clone</h3>
-              <div class="project-info">
-                <p>Next.js & Tailwind CSS</p>
-              </div>
-              <div class="project-icons">
-                <a
-                  href="https://github.com/yerovyespitia/disney-plus-clone"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="/img/github.svg"
-                    alt="Github"
-                    title="See Repository"
-                  />
-                </a>
-                <a
-                  href="https://disney-plus-clone-2adnb06l2-yerovyespitia.vercel.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="/img/open.svg" alt="Open" title="See Project" />
-                </a>
-              </div>
+                  <path
+                    d="M8 7C8 6.44772 8.44772 6 9 6L17 6C17.5523 6 18 6.44772 18 7V15C18 15.5523 17.5523 16 17 16C16.4477 16 16 15.5523 16 15V9.41421L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L14.5858 8L9 8C8.44772 8 8 7.55228 8 7Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
       </section>
-      <section
-        class="blog-container"
-        data-aos="fade-in"
-        data-aos-duration="4000"
-        data-aos-delay="400"
-      >
-        <div class="blog">
-          <h2>My blog</h2>
+      <!-- My blog -->
+      <section class="my-10 pb-32 w-full" id="blog">
+        <div class="text-white text-4xl my-4 font-bold font-['Oxygen']">
+          <h2>My Blog</h2>
         </div>
-        <div class="blog-elements">
-          <div class="blog-grid">
-            <a href="/about-state-of-mac.html">
-              <div class="blog-item">
-                <div class="blog-img-container">
-                  <img class="blog-img" src="/img/som.png" alt="som" />
-                </div>
-                <div class="blog-info-container">
-                  <h3 class="blog-info-title">
-                    About State of Mac and its goal
-                  </h3>
-                  <p class="blog-info-date">Publish March 16, 2022</p>
-                  <p class="blog-info-desc">
-                    Back in 2020, Apple surprised the world in the WWDC by
-                    announcing the transition away from using Intel in favor of
-                    Apple silicon...
-                  </p>
-                </div>
-              </div>
-            </a>
+        <a href="/state-of-mac.html">
+          <div class="w-full drop-shadow-2xl md:w-[350px]">
+            <div
+              class="bg-[#293143] hover:bg-[#2f384d] p-5 rounded-lg cursor-pointer"
+            >
+              <img
+                class="rounded-lg mb-4"
+                src="/img/som.png"
+                alt="state of mac"
+              />
+              <p class="text-white text-2xl font-bold font-['Roboto'] mb-1">
+                About State of Mac
+              </p>
+              <p class="text-gray-500 mb-1">Published March 16, 2022</p>
+              <p class="text-white">
+                Back in 2020, Apple surprised the world in the WWDC by
+                announcing the transition away from using Intel in favor of
+                Apple silicon...
+              </p>
+            </div>
           </div>
-        </div>
+        </a>
       </section>
-      <section
-        class="contact-container"
-        data-aos="fade-in"
-        data-aos-duration="4000"
-        data-aos-delay="400"
-      >
-        <div class="contact">
+      <!-- Contact me -->
+      <section class="text-center my-10 pb-32 w-full" id="contact">
+        <div class="text-white text-4xl my-4 font-bold font-['Oxygen']">
           <h2>Contact Me</h2>
         </div>
-        <div class="social-media">
-          <a
-            href="https://github.com/yerovyespitia"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="/img/github.svg" alt="Github" title="Github" />
+        <div
+          class="flex justify-center pt-10 filter sepia-[6%] invert-[100%] saturate-[915%] hue-rotate-[176deg] brightness-[93%] contrast-[88%]"
+        >
+          <a href="https://github.com/yerovyespitia" target="_blank">
+            <img
+              class="w-10 m-2 cursor-pointer hover:scale-105"
+              src="/img/github.svg"
+              alt="github"
+              title="Github"
+            />
           </a>
-          <a
-            href="https://www.linkedin.com/in/yerovyespitia/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="/img/linkedin.svg" alt="Linkedin" title="Linkedin" />
+          <a href="https://twitter.com/yerovyespitia" target="_blank">
+            <img
+              class="w-10 m-2 cursor-pointer hover:scale-105"
+              src="/img/twitter.svg"
+              alt="twitter"
+              title="Twitter"
+            />
           </a>
-          <a
-            href="https://twitter.com/yerovyespitia"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="/img/twitter.svg" alt="Twitter" title="Twitter" />
+          <a href="https://www.linkedin.com/in/yerovyespitia/" target="_blank">
+            <img
+              class="w-10 m-2 cursor-pointer hover:scale-105"
+              src="/img/linkedin.svg"
+              alt="linkedin"
+              title="Linkedin"
+            />
           </a>
         </div>
       </section>
-    </div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init()
-    </script>
+    </main>
   </body>
 </html>

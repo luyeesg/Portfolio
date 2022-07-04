@@ -1,9 +1,5 @@
-# Yerovy Espitia Portfolio
+# Portfolio
 
-Here you can find all my skills, my experience, projects I'm working on and the things I want to learn.
+I'm Luis Yerovy Espitia Garcés, a passionate about programmming, building stuff for the use of other people and learning new technologies.
 
-## Built With
-
-* HTML5
-* CSS3
-* Javascript
+Here in my portfolio you will find all my projects, my ideas, where you can find me and somethings about me.

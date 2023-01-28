@@ -31,80 +31,46 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Yerovy Espitia</title>
   </head>
-  <body class="bg-[#04293A]">
+  <body class="bg-gray-900">
     <!-- Navbar -->
     <header
-      class="flex justify-end flex-col h-60 lg:flex-row text-white lg:h-16 items-center text-lg font-medium font-['Roboto']"
+      id="home"
+      class="flex justify-center text-white h-16 md:justify-start md:px-5 items-center text-lg font-['Helvetica']"
     >
-      <a href="#projects" class="my-2 mx-6 hover:underline">Projects</a>
-      <a href="#contact" class="my-2 mx-6 hover:underline">Contact Me</a>
-      <a
-        href="/img/CV.pdf"
-        class="my-2 mx-6 rounded-lg border px-4 py-2 border-white hover:bg-white hover:text-black"
-        >Resume</a
-      >
+      <a href="#projects" class="px-3">Projects</a>
+      <a href="#contact" class="px-3">Contact</a>
+      <a href="/img/CV.pdf" class="px-3">Resume</a>
     </header>
+    <!-- Navbar -->
+
     <main
-      class="flex justify-center items-center flex-col max-w-6xl m-auto p-10"
+      class="flex justify-center items-center flex-col max-w-6xl m-auto p-8"
     >
-      <section class="h-screen flex justify-center mb-32 items-start flex-col">
-        <div class="text-[#F6E3C5] text-lg my-4 font-medium">
-          <span>Hey, ✌️ I'm</span>
+      <section class="h-screen flex justify-center items-start flex-col">
+        <div class="text-white text-5xl md:text-7xl font-medium mb-6">
+          <p>
+            Hi, I'm Yerovy, <br />
+            a <span class="text-red-500">front-end developer</span> <br />
+            based in Colombia.
+          </p>
         </div>
-        <div class="text-[#F6E3C5] text-8xl my-4 font-bold font-['Oxygen']">
-          <span>Yerovy Espitia.</span>
-        </div>
-        <div class="text-[#A0D995] text-6xl my-4 font-bold font-['Oxygen']">
-          <span>I build great experiences for the web.</span>
-        </div>
-        <div class="text-gray-300 text-xl my-4">
-          <span
-            >I'm a self-taught front-end developer that like building a good
-            experience for users.</span
-          >
-        </div>
-        <div class="flex flex-wrap items-center">
-          <img
-            class="w-14 m-2"
-            src="/img/react.png"
-            alt="react"
-            title="React.js"
-          />
-          <img
-            class="w-14 m-2"
-            src="/img/ts.png"
-            alt="typescript"
-            title="Typescript"
-          />
-          <img
-            class="w-14 m-2"
-            src="/img/nodejs.svg"
-            alt="node"
-            title="Node.js"
-          />
-          <img
-            class="w-14 m-2"
-            src="/img/mongo.png"
-            alt="mongo"
-            title="MongoDB"
-          />
-          <img class="w-14 m-2" src="/img/sql.png" alt="sql" title="MySQL" />
-        </div>
+        <p class="text-gray-600 text-lg mb-6">
+          I'm a self-taught front-end developer ready for new opportunities.
+        </p>
       </section>
+
+      <div class="bg-gray-600 w-full h-[0.5px] mb-24"></div>
+
       <!-- Projects -->
-      <section class="my-10 pb-32 w-full" id="projects">
-        <div class="text-white text-4xl my-4 font-bold font-['Oxygen']">
+      <section class="h-screen flex justify-center" id="projects">
+        <div class="text-white text-4xl my-4 font-medium">
           <h2>Projects</h2>
         </div>
-        <div
-          class="flex justify-center flex-wrap lg:flex-nowrap items-center gap-3"
-        >
+        <div class="flex flex-nowrap items-center gap-3">
           <div
-            class="hover:border-white hover:border drop-shadow-2xl flex justify-center flex-col w-full items-center h-[350px] bg-green-800 rounded-xl cursor-pointer"
+            class="flex justify-center flex-col w-full items-center h-80 bg-green-800 rounded-xl cursor-pointer"
           >
-            <p class="text-white font-bold text-2xl font-['Roboto'] uppercase">
-              State of Mac
-            </p>
+            <p class="text-white font-bold text-2xl">State of Mac</p>
             <p class="p-2 text-white text-center text-base font-medium">
               Next, Sass, Redux, Node, MongoDB
             </p>
@@ -135,11 +101,9 @@
             </div>
           </div>
           <div
-            class="hover:border-white hover:border drop-shadow-2xl flex justify-center flex-col items-center w-full h-[350px] bg-blue-800 rounded-xl cursor-pointer"
+            class="flex justify-center flex-col items-center w-full h-80 bg-blue-800 rounded-xl cursor-pointer"
           >
-            <p class="text-white font-bold text-2xl font-['Roboto'] uppercase">
-              Anime Streaming
-            </p>
+            <p class="text-white font-bold text-2xl">Anime Streaming</p>
             <p class="p-2 text-white text-center text-base font-medium">
               Sveltekit, Typescript, Tailwind, Node, MongoDB
             </p>
@@ -174,11 +138,9 @@
             </div>
           </div>
           <div
-            class="hover:border-white hover:border drop-shadow-2xl flex justify-center flex-col items-center w-full h-[350px] bg-red-800 rounded-xl cursor-pointer"
+            class="flex justify-center flex-col items-center w-full h-80 bg-red-800 rounded-xl cursor-pointer"
           >
-            <p class="text-white font-bold text-2xl font-['Roboto'] uppercase">
-              Disney Plus Clone
-            </p>
+            <p class="text-white font-bold text-2xl">Disney Plus Clone</p>
             <p class="p-2 text-white text-center text-base font-medium">
               Next, Tailwind
             </p>
@@ -214,6 +176,10 @@
           </div>
         </div>
       </section>
+      <!-- Projects -->
+
+      <div class="bg-gray-600 w-full h-[0.5px] mb-24"></div>
+
       <!-- Contact me -->
       <section class="text-center my-10 pb-32 w-full" id="contact">
         <div class="text-white text-4xl my-4 font-bold font-['Oxygen']">
@@ -224,7 +190,7 @@
         >
           <a href="https://github.com/yerovyespitia" target="_blank">
             <img
-              class="w-10 m-2 cursor-pointer hover:scale-105"
+              class="w-10 m-2 cursor-pointer"
               src="/img/github.svg"
               alt="github"
               title="Github"
@@ -232,7 +198,7 @@
           </a>
           <a href="https://twitter.com/yerovyespitia" target="_blank">
             <img
-              class="w-10 m-2 cursor-pointer hover:scale-105"
+              class="w-10 m-2 cursor-pointer"
               src="/img/twitter.svg"
               alt="twitter"
               title="Twitter"
@@ -240,7 +206,7 @@
           </a>
           <a href="https://www.linkedin.com/in/yerovyespitia/" target="_blank">
             <img
-              class="w-10 m-2 cursor-pointer hover:scale-105"
+              class="w-10 m-2 cursor-pointer"
               src="/img/linkedin.svg"
               alt="linkedin"
               title="Linkedin"
@@ -248,6 +214,7 @@
           </a>
         </div>
       </section>
+      <!-- Contact me -->
     </main>
   </body>
 </html>

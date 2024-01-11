@@ -31,12 +31,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Yerovy Espitia</title>
   </head>
+
   <body class="bg-gray-900">
     <!-- Navbar -->
     <header
       id="home"
       class="flex justify-center text-white h-16 md:justify-start md:px-5 items-center text-lg font-['Helvetica']"
     >
+      <a href="#skills" class="px-3">Skills</a>
       <a href="#projects" class="px-3">Projects</a>
       <a href="#contact" class="px-3">Contact</a>
       <a href="/img/CV.pdf" class="px-3">Resume</a>
@@ -54,126 +56,262 @@
             based in Colombia.
           </p>
         </div>
-        <p class="text-gray-600 text-lg mb-6">
+        <p class="text-gray-400 text-lg mb-6">
           I'm a self-taught front-end developer ready for new opportunities.
         </p>
       </section>
 
       <div class="bg-gray-600 w-full h-[0.5px] mb-24"></div>
 
-      <!-- Projects -->
-      <section class="h-screen flex flex-col" id="projects">
+      <!-- Skills -->
+      <section class="flex justify-center items-start flex-col" id="skills">
         <div
-          class="flex flex-wrap flex-col justify-center items-center md:flex-nowrap gap-3"
+          class="text-white text-center text-4xl my-4 font-medium flex items-center w-full"
         >
-          <div class="text-white text-4xl my-4 font-medium">
-            <h2>Projects</h2>
-          </div>
-          <div
-            class="flex justify-center flex-col w-full items-center min-h-[230px] bg-green-800 rounded-xl cursor-pointer"
+          <h2 class="w-full">Skills</h2>
+        </div>
+
+        <div>
+          <p
+            class="text-white inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-gray-700 hover:bg-gray-700/60 py-0 px-1 text-[13px]"
           >
-            <p class="text-white font-bold text-2xl">State of Mac</p>
-            <p class="p-2 text-white text-center text-base font-medium">
-              Next, Sass, Redux, Node, MongoDB
-            </p>
-            <div
-              class="flex filter sepia-0 invert saturate-0 hue-rotate-[320deg] brightness-[102%] contrast-[101%]"
-            >
-              <a
-                class="px-1"
-                href="https://github.com/yerovyespitia/StateofMac"
-                target="_blank"
-              >
-                <img src="/img/github.svg" alt="source code" />
-              </a>
-              <a
-                class="px-1"
-                href="http://stateofmac.vercel.app"
-                target="_blank"
-              >
-                <svg
-                  width="30"
-                  height="30"
-                  viewbox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8 7C8 6.44772 8.44772 6 9 6L17 6C17.5523 6 18 6.44772 18 7V15C18 15.5523 17.5523 16 17 16C16.4477 16 16 15.5523 16 15V9.41421L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L14.5858 8L9 8C8.44772 8 8 7.55228 8 7Z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
+            Javascript
+          </p>
+          <p
+            class="text-white inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-gray-700 hover:bg-gray-700/60 py-0 px-1 text-[13px]"
+          >
+            Typescript
+          </p>
+          <p
+            class="text-white inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-gray-700 hover:bg-gray-700/60 py-0 px-1 text-[13px]"
+          >
+            React/Next.js
+          </p>
+          <p
+            class="text-white inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-gray-700 hover:bg-gray-700/60 py-0 px-1 text-[13px]"
+          >
+            Tailwind
+          </p>
+          <p
+            class="text-white inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-gray-700 hover:bg-gray-700/60 py-0 px-1 text-[13px]"
+          >
+            Node.js
+          </p>
+          <p
+            class="text-white inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-gray-700 hover:bg-gray-700/60 py-0 px-1 text-[13px]"
+          >
+            GraphQL
+          </p>
+        </div>
+      </section>
+      <!-- Skills -->
+
+      <div class="bg-gray-600 w-full h-[0.5px] mt-24 mb-24"></div>
+
+      <!-- Projects -->
+      <section id="projects">
+        <div class="text-white text-4xl my-4 font-medium -mx-3">
+          <h2>Projects</h2>
+        </div>
+
+        <div
+          class="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3"
+        >
+          <div
+            class="rounded-lg text-md flex flex-col overflow-hidden border border-[#2c3e50] p-3"
+          >
+            <div class="flex flex-col space-y-1.5">
+              <a href="https://stateofmac.vercel.app/" target="_blank">
+                <p class="text-white font-bold text-lg cursor-pointer">
+                  State of Mac
+                </p>
               </a>
             </div>
-          </div>
-          <div
-            class="flex justify-center flex-col items-center w-full min-h-[230px] bg-blue-800 rounded-xl cursor-pointer"
-          >
-            <p class="text-white font-bold text-2xl">WAZ</p>
-            <p class="p-2 text-white text-center text-base font-medium">
-              Next.js, Typescript, Tailwind, Redux, Tauri
+
+            <p class="font-mono text-white mt-3 mb-3">
+              SoM is the easiest way to know if your favorite game runs on Mac.
             </p>
+
             <div
-              class="flex filter sepia-0 invert saturate-0 hue-rotate-[320deg] brightness-[102%] contrast-[101%]"
+              class="text-pretty font-mono text-sm text-sm mt-auto flex mb-2"
             >
-              <a
-                class="px-1"
-                href="https://github.com/yerovyespitia/waz"
-                target="_blank"
-              >
-                <img src="/img/github.svg" alt="source code" />
-              </a>
-              <a class="px-1" href="https://waz.vercel.app" target="_blank">
-                <svg
-                  width="30"
-                  height="30"
-                  viewbox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+              <div class="mt-2 flex flex-wrap gap-1">
+                <p
+                  class="text-white inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-gray-400 hover:bg-gray-400/60 py-0 px-1 text-[13px]"
                 >
-                  <path
-                    d="M8 7C8 6.44772 8.44772 6 9 6L17 6C17.5523 6 18 6.44772 18 7V15C18 15.5523 17.5523 16 17 16C16.4477 16 16 15.5523 16 15V9.41421L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L14.5858 8L9 8C8.44772 8 8 7.55228 8 7Z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
-              </a>
+                  Side project
+                </p>
+                <p
+                  class="text-white inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-gray-400 hover:bg-gray-400/60 py-0 px-1 text-[13px]"
+                >
+                  Next.js
+                </p>
+                <p
+                  class="text-white inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-gray-400 hover:bg-gray-400/60 py-0 px-1 text-[13px]"
+                >
+                  Redux
+                </p>
+                <p
+                  class="text-white inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-gray-400 hover:bg-gray-400/60 py-0 px-1 text-[13px]"
+                >
+                  Node
+                </p>
+              </div>
             </div>
           </div>
+
           <div
-            class="flex justify-center flex-col items-center w-full min-h-[230px] bg-red-800 rounded-xl cursor-pointer"
+            class="rounded-lg text-md flex flex-col overflow-hidden border border-[#2c3e50] p-3"
           >
-            <p class="text-white font-bold text-2xl">Disney Plus Clone</p>
-            <p class="p-2 text-white text-center text-base font-medium">
-              Next, Tailwind
+            <div class="flex flex-col space-y-1.5">
+              <a href="https://waz.vercel.app/" target="_blank">
+                <p class="text-white font-bold text-lg cursor-pointer">WAZ</p>
+              </a>
+            </div>
+
+            <p class="font-mono text-white mt-3 mb-3">
+              With WAZ, you can easily find and watch your favorite anime shows
+              and movies on your computer.
             </p>
+
             <div
-              class="flex filter sepia-0 invert saturate-0 hue-rotate-[320deg] brightness-[102%] contrast-[101%]"
+              class="text-pretty font-mono text-sm text-sm mt-auto flex mb-2"
             >
-              <a
-                class="px-1"
-                href="https://github.com/yerovyespitia/disney-plus-clone"
-                target="_blank"
-              >
-                <img src="/img/github.svg" alt="source code" />
-              </a>
-              <a
-                class="px-1"
-                href="https://disney-plus-clone-2adnb06l2-yerovyespitia.vercel.app"
-                target="_blank"
-              >
-                <svg
-                  width="30"
-                  height="30"
-                  viewbox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+              <div class="mt-2 flex flex-wrap gap-1">
+                <p
+                  class="text-white inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-gray-400 hover:bg-gray-400/60 py-0 px-1 text-[13px]"
                 >
-                  <path
-                    d="M8 7C8 6.44772 8.44772 6 9 6L17 6C17.5523 6 18 6.44772 18 7V15C18 15.5523 17.5523 16 17 16C16.4477 16 16 15.5523 16 15V9.41421L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L14.5858 8L9 8C8.44772 8 8 7.55228 8 7Z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
+                  Side project
+                </p>
+                <p
+                  class="text-white inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-gray-400 hover:bg-gray-400/60 py-0 px-1 text-[13px]"
+                >
+                  Next.js
+                </p>
+                <p
+                  class="text-white inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-gray-400 hover:bg-gray-400/60 py-0 px-1 text-[13px]"
+                >
+                  Typescript
+                </p>
+                <p
+                  class="text-white inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-gray-400 hover:bg-gray-400/60 py-0 px-1 text-[13px]"
+                >
+                  Tauri
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="rounded-lg text-md flex flex-col overflow-hidden border border-[#2c3e50] p-3"
+          >
+            <div class="flex flex-col space-y-1.5">
+              <a href="https://asoprocegua.vercel.app" target="_blank">
+                <p class="text-white font-bold text-lg cursor-pointer">
+                  Asoprocegua
+                </p>
               </a>
+            </div>
+
+            <p class="font-mono text-white mt-3 mb-3">
+              "Our mission is to represent small and medium-sized producers in
+              Guaviare."
+            </p>
+
+            <div
+              class="text-pretty font-mono text-sm text-sm mt-auto flex mb-2"
+            >
+              <div class="mt-2 flex flex-wrap gap-1">
+                <p
+                  class="text-white inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-gray-400 hover:bg-gray-400/60 py-0 px-1 text-[13px]"
+                >
+                  Front-end developer
+                </p>
+                <p
+                  class="text-white inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-gray-400 hover:bg-gray-400/60 py-0 px-1 text-[13px]"
+                >
+                  Next.js
+                </p>
+                <p
+                  class="text-white inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-gray-400 hover:bg-gray-400/60 py-0 px-1 text-[13px]"
+                >
+                  Typescript
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="rounded-lg text-md flex flex-col overflow-hidden border border-[#2c3e50] p-3"
+          >
+            <div class="flex flex-col space-y-1.5">
+              <a href="https://dcrew-main-front-v2.vercel.app/" target="_blank">
+                <p class="text-white font-bold text-lg cursor-pointer">Dcrew</p>
+              </a>
+            </div>
+
+            <p class="font-mono text-white mt-3 mb-3">
+              Cinephile social network.
+            </p>
+
+            <div
+              class="text-pretty font-mono text-sm text-sm mt-auto flex mb-2"
+            >
+              <div class="mt-2 flex flex-wrap gap-1">
+                <p
+                  class="text-white inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-gray-400 hover:bg-gray-400/60 py-0 px-1 text-[13px]"
+                >
+                  Front-end developer
+                </p>
+                <p
+                  class="text-white inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-gray-400 hover:bg-gray-400/60 py-0 px-1 text-[13px]"
+                >
+                  Next.js
+                </p>
+                <p
+                  class="text-white inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-gray-400 hover:bg-gray-400/60 py-0 px-1 text-[13px]"
+                >
+                  Ant Design
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="rounded-lg text-md flex flex-col overflow-hidden border border-[#2c3e50] p-3"
+          >
+            <div class="flex flex-col space-y-1.5">
+              <a href="https://www.capturatumundo.com" target="_blank">
+                <p class="text-white font-bold text-lg cursor-pointer">
+                  Captura tu mundo
+                </p>
+              </a>
+            </div>
+
+            <p class="font-mono text-white mt-3 mb-3">
+              Explore a dynamic online hub tailored for photography enthusiasts.
+            </p>
+
+            <div
+              class="text-pretty font-mono text-sm text-sm mt-auto flex mb-2"
+            >
+              <div class="mt-2 flex flex-wrap gap-1">
+                <p
+                  class="text-white inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-gray-400 hover:bg-gray-400/60 py-0 px-1 text-[13px]"
+                >
+                  Front-end developer
+                </p>
+                <p
+                  class="text-white inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-gray-400 hover:bg-gray-400/60 py-0 px-1 text-[13px]"
+                >
+                  Next.js
+                </p>
+                <p
+                  class="text-white inline-flex items-center rounded-md border font-semibold font-mono transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap border-transparent bg-gray-400 hover:bg-gray-400/60 py-0 px-1 text-[13px]"
+                >
+                  Ant Design
+                </p>
+              </div>
             </div>
           </div>
         </div>

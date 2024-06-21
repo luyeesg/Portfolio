@@ -37,24 +37,68 @@
       class="flex justify-center items-center flex-col max-w-6xl m-auto p-8"
     >
       <section class="h-screen flex justify-center flex-col">
-        <div class="text-white text-5xl md:text-7xl font-medium mb-6">
+        <div class="text-white text-6xl md:text-8xl font-medium mb-6">
           <p class="">
-            I'm Yerovy, <br />
-            a <span class="text-red-500">Web Developer</span> <br />
-            based in Colombia.
+            I'm <span class="text-yellow-500">Yerovy</span>, <br class='hidden md:inline'/>
+            a <span class="text-blue-500">Web Developer</span> <br class='hidden md:inline'/>
+            based in <span class="text-red-500">Colombia</span>.
           </p>
         </div>
-        <p class="text-gray-400 text-lg mb-6">
-          I'm a self-taught front-end developer ready for new opportunities.
+        <p class="text-gray-400 text-lg mb-6 max-w-3xl">
+          I am a dedicated and experienced web developer with a diverse
+          background in front-end and back-end development. I specialize in
+          creating dynamic, scalable, and efficient web applications using
+          Next.js, TypeScript, Node.js, and Express.
         </p>
 
-        <a href="/img/CV.pdf" download>
-          <button
-            class="text-white font-bold bg-gray-700 px-14 py-4 rounded-full hover:bg-gray-600"
-          >
-            Resume
-          </button>
-        </a>
+        <div class="flex gap-2 mb-4">
+          <a href="https://github.com/yerovyespitia" target="_blank">
+            <div
+              class="flex justify-center items-center rounded-full rounded-full p-4 border border-gray-700 bg-gray-700"
+            >
+              <img
+                class="size-6 cursor-pointer filter sepia-[7%] invert-[85%] saturate-[129%] hue-rotate-[314deg] brightness-[86%] contrast-[83%]"
+                src="/img/github.svg"
+                alt="github"
+                title="Github"
+              />
+            </div>
+          </a>
+          <a href="https://twitter.com/yerovyespitia" target="_blank">
+            <div
+              class="flex justify-center items-center rounded-full p-4 border border-gray-700 bg-gray-700"
+            >
+              <img
+                class="size-6 cursor-pointer filter sepia-[7%] invert-[85%] saturate-[129%] hue-rotate-[314deg] brightness-[86%] contrast-[83%]"
+                src="/img/twitter.svg"
+                alt="twitter"
+                title="Twitter"
+              />
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/yerovyespitia/" target="_blank">
+            <div
+              class="flex justify-center items-center rounded-full p-4 border border-gray-700 bg-gray-700"
+            >
+              <img
+                class="size-6 cursor-pointer filter sepia-[7%] invert-[85%] saturate-[129%] hue-rotate-[314deg] brightness-[86%] contrast-[83%]"
+                src="/img/linkedin.svg"
+                alt="linkedin"
+                title="Linkedin"
+              />
+            </div>
+          </a>
+        </div>
+
+        <div class="max-w-fit">
+          <a href="/img/CV.pdf" download>
+            <button
+              class="text-white font-bold bg-gray-700 px-14 py-4 rounded-full hover:bg-gray-600"
+            >
+              Resume
+            </button>
+          </a>
+        </div>
       </section>
 
       <div class="bg-gray-600 w-full h-[0.5px] mb-24"></div>
@@ -188,6 +232,9 @@
                 <p class="text-white font-bold text-lg cursor-pointer">
                   State of Mac
                 </p>
+                <span class="text-gray-400 text-sm font-medium"
+                  >PUBLISHED | SIDE PROJECT</span
+                >
               </a>
             </div>
 
@@ -247,6 +294,9 @@
             <div class="flex flex-col space-y-1.5">
               <a href="https://waz.vercel.app/" target="_blank">
                 <p class="text-white font-bold text-lg cursor-pointer">WAZ</p>
+                <span class="text-gray-400 text-sm font-medium"
+                  >SIDE PROJECT</span
+                >
               </a>
             </div>
 
@@ -303,6 +353,7 @@
                 <p class="text-white font-bold text-lg cursor-pointer">
                   Asoprocegua
                 </p>
+                <span class="text-gray-400 text-sm font-medium">PUBLISHED</span>
               </a>
             </div>
 
@@ -345,6 +396,7 @@
             <div class="flex flex-col space-y-1.5">
               <a href="https://dcrew-main-front-v2.vercel.app/" target="_blank">
                 <p class="text-white font-bold text-lg cursor-pointer">Dcrew</p>
+                <span class="text-gray-400 text-sm font-medium">PUBLISHED</span>
               </a>
             </div>
 
@@ -382,6 +434,7 @@
                 <p class="text-white font-bold text-lg cursor-pointer">
                   Captura tu mundo
                 </p>
+                <span class="text-gray-400 text-sm font-medium">PUBLISHED</span>
               </a>
             </div>
 
@@ -413,6 +466,12 @@
                   alt="Tailwind"
                   title="Tailwind"
                 />
+                <img
+                  class="size-7 rounded-sm"
+                  src="./img/graphql.svg"
+                  alt="Graphql"
+                  title="Graphql"
+                />
               </div>
             </div>
           </div>
@@ -421,42 +480,6 @@
       <!-- Projects -->
 
       <div class="bg-gray-600 w-full h-[0.5px] mb-24 mt-24"></div>
-
-      <!-- Contact me -->
-      <section class="text-center my-10 pb-32 w-full" id="contact">
-        <div class="text-white text-4xl my-4 font-medium">
-          <h2 class="font-bold">Contact Me</h2>
-        </div>
-        <div
-          class="flex justify-center gap-5 pt-8 filter sepia-[6%] invert-[100%] saturate-[915%] hue-rotate-[176deg] brightness-[93%] contrast-[88%]"
-        >
-          <a href="https://github.com/yerovyespitia" target="_blank">
-            <img
-              class="size-9 cursor-pointer"
-              src="/img/github.svg"
-              alt="github"
-              title="Github"
-            />
-          </a>
-          <a href="https://twitter.com/yerovyespitia" target="_blank">
-            <img
-              class="size-9 cursor-pointer"
-              src="/img/twitter.svg"
-              alt="twitter"
-              title="Twitter"
-            />
-          </a>
-          <a href="https://www.linkedin.com/in/yerovyespitia/" target="_blank">
-            <img
-              class="size-9 cursor-pointer"
-              src="/img/linkedin.svg"
-              alt="linkedin"
-              title="Linkedin"
-            />
-          </a>
-        </div>
-      </section>
-      <!-- Contact me -->
     </main>
   </body>
 </html>

@@ -20,6 +20,12 @@
       href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -42,76 +48,83 @@
     <title>Yerovy Espitia</title>
   </head>
 
-  <body class="bg-gray-800">
+  <body class="bg-[#030711]">
     <main
       class="flex justify-center items-center flex-col max-w-6xl m-auto p-8"
     >
       <section class="h-screen flex justify-center flex-col">
-        <div class="text-white text-6xl md:text-8xl font-medium mb-6">
-          <p class="">
+        <div
+          class="text-white text-6xl md:text-7xl mb-6 text-left md:text-center"
+        >
+          <p class="font-sans font-bold">
             I'm Yerovy,
             <br class="hidden md:inline" />
             a <span class="text-cyan-600 font-semibold">Web Developer</span>
             <br class="hidden md:inline" />
-            based in <span class="text-red-500">Colombia</span>.
+            based in <span class="text-red-600">Colombia</span>.
           </p>
         </div>
 
-        <p class="text-gray-400 text-lg mb-4 max-w-3xl">
+        <p class="text-gray-400 text-lg mb-4 max-w-xl">
           I am a dedicated and experienced web developer with a diverse
           background in front-end and back-end development. I specialize in
           creating dynamic, scalable, and efficient web applications using
           Next.js, TypeScript, Node.js, and Express.
         </p>
 
-        <div class="flex gap-2 mb-4">
-          <a href="https://github.com/yerovyespitia" target="_blank">
-            <div
-              class="flex justify-center items-center rounded-full rounded-full p-4 hover:bg-gray-600 border border-gray-700 bg-gray-700"
+        <section class="w-full flex flex-col items-center">
+          <div class="flex gap-2 mb-4">
+            <a href="https://github.com/yerovyespitia" target="_blank">
+              <div
+                class="flex justify-center items-center rounded-full rounded-full p-4 hover:bg-[#1c283a] border border-[#1c283a]"
+              >
+                <img
+                  class="size-6 cursor-pointer filter sepia-[7%] invert-[85%] saturate-[129%] hue-rotate-[314deg] brightness-[86%] contrast-[83%]"
+                  src="/img/github.svg"
+                  alt="github"
+                  title="Github"
+                />
+              </div>
+            </a>
+            <a href="https://twitter.com/yerovyespitia" target="_blank">
+              <div
+                class="flex justify-center items-center rounded-full p-4 hover:bg-[#1c283a] border border-[#1c283a]"
+              >
+                <img
+                  class="size-6 cursor-pointer filter sepia-[7%] invert-[85%] saturate-[129%] hue-rotate-[314deg] brightness-[86%] contrast-[83%]"
+                  src="/img/twitter.svg"
+                  alt="twitter"
+                  title="Twitter"
+                />
+              </div>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/yerovyespitia/"
+              target="_blank"
             >
-              <img
-                class="size-6 cursor-pointer filter sepia-[7%] invert-[85%] saturate-[129%] hue-rotate-[314deg] brightness-[86%] contrast-[83%]"
-                src="/img/github.svg"
-                alt="github"
-                title="Github"
-              />
-            </div>
-          </a>
-          <a href="https://twitter.com/yerovyespitia" target="_blank">
-            <div
-              class="flex justify-center items-center rounded-full p-4 hover:bg-gray-600 border border-gray-700 bg-gray-700"
-            >
-              <img
-                class="size-6 cursor-pointer filter sepia-[7%] invert-[85%] saturate-[129%] hue-rotate-[314deg] brightness-[86%] contrast-[83%]"
-                src="/img/twitter.svg"
-                alt="twitter"
-                title="Twitter"
-              />
-            </div>
-          </a>
-          <a href="https://www.linkedin.com/in/yerovyespitia/" target="_blank">
-            <div
-              class="flex justify-center items-center rounded-full p-4 hover:bg-gray-600 border border-gray-700 bg-gray-700"
-            >
-              <img
-                class="size-6 cursor-pointer filter sepia-[7%] invert-[85%] saturate-[129%] hue-rotate-[314deg] brightness-[86%] contrast-[83%]"
-                src="/img/linkedin.svg"
-                alt="linkedin"
-                title="Linkedin"
-              />
-            </div>
-          </a>
-        </div>
+              <div
+                class="flex justify-center items-center rounded-full p-4 hover:bg-[#1c283a] border border-[#1c283a]"
+              >
+                <img
+                  class="size-6 cursor-pointer filter sepia-[7%] invert-[85%] saturate-[129%] hue-rotate-[314deg] brightness-[86%] contrast-[83%]"
+                  src="/img/linkedin.svg"
+                  alt="linkedin"
+                  title="Linkedin"
+                />
+              </div>
+            </a>
+          </div>
 
-        <div class="max-w-fit">
-          <a href="/img/CV.pdf" download>
-            <button
-              class="text-white font-bold bg-gray-700 px-14 py-4 rounded-full hover:bg-gray-600"
-            >
-              Resume
-            </button>
-          </a>
-        </div>
+          <div class="max-w-fit">
+            <a href="/img/CV.pdf" download>
+              <button
+                class="text-white font-bold border border-[#1c283a] px-10 py-3 rounded-full hover:bg-[#1c283a]"
+              >
+                Resume
+              </button>
+            </a>
+          </div>
+        </section>
       </section>
 
       <div class="bg-gray-600 w-full h-[0.5px] mb-24"></div>
@@ -136,7 +149,7 @@
                 Independent Frontend Developer
               </h3>
               <p class="text-lg font-medium text-gray-400">
-                March 2023 - Dec 2023
+                March 2023 - Jan 2024
               </p>
             </div>
             <p class="text-white text-lg font-mono">
@@ -279,7 +292,7 @@
         >
           <a href="https://stateofmac.vercel.app/" target="_blank">
             <div
-              class="rounded-lg duration-500 h-[236px] text-md flex flex-col overflow-hidden border border-[#2c3e50] p-5 transition hover:border-gray-500 hover:scale-105 cursor-pointer"
+              class="rounded-lg duration-500 h-[250px] text-md flex flex-col overflow-hidden border border-[#2c3e50] p-5 transition hover:border-gray-500 hover:scale-105 cursor-pointer"
             >
               <div class="flex flex-col space-y-1.5">
                 <p class="text-white font-bold text-lg cursor-pointer">
@@ -344,7 +357,7 @@
 
           <a href="https://waz.vercel.app/" target="_blank">
             <div
-              class="rounded-lg duration-500 h-[236px] text-md flex flex-col overflow-hidden border border-[#2c3e50] p-5 transition hover:border-gray-500 hover:scale-105 cursor-pointer"
+              class="rounded-lg duration-500 h-[250px] text-md flex flex-col overflow-hidden border border-[#2c3e50] p-5 transition hover:border-gray-500 hover:scale-105 cursor-pointer"
             >
               <div class="flex flex-col space-y-1.5">
                 <p class="text-white font-bold text-lg cursor-pointer">WAZ</p>
@@ -401,7 +414,7 @@
 
           <a href="https://asoprocegua.vercel.app" target="_blank">
             <div
-              class="rounded-lg duration-500 h-[236px] text-md flex flex-col overflow-hidden border border-[#2c3e50] p-5 transition hover:border-gray-500 hover:scale-105 cursor-pointer"
+              class="rounded-lg duration-500 h-[250px] text-md flex flex-col overflow-hidden border border-[#2c3e50] p-5 transition hover:border-gray-500 hover:scale-105 cursor-pointer"
             >
               <div class="flex flex-col space-y-1.5">
                 <p class="text-white font-bold text-lg cursor-pointer">
@@ -446,7 +459,7 @@
 
           <a href="https://dcrew-main-front-v2.vercel.app/" target="_blank">
             <div
-              class="rounded-lg duration-500 h-[236px] text-md flex flex-col overflow-hidden border border-[#2c3e50] p-5 transition hover:border-gray-500 hover:scale-105 cursor-pointer"
+              class="rounded-lg duration-500 h-[250px] text-md flex flex-col overflow-hidden border border-[#2c3e50] p-5 transition hover:border-gray-500 hover:scale-105 cursor-pointer"
             >
               <div class="flex flex-col space-y-1.5">
                 <p class="text-white font-bold text-lg cursor-pointer">Dcrew</p>
@@ -482,7 +495,7 @@
 
           <a href="https://www.capturatumundo.com" target="_blank">
             <div
-              class="rounded-lg duration-500 h-[236px] text-md flex flex-col overflow-hidden border border-[#2c3e50] p-5 transition hover:border-gray-500 hover:scale-105 cursor-pointer"
+              class="rounded-lg duration-500 h-[250px] text-md flex flex-col overflow-hidden border border-[#2c3e50] p-5 transition hover:border-gray-500 hover:scale-105 cursor-pointer"
             >
               <div class="flex flex-col space-y-1.5">
                 <p class="text-white font-bold text-lg cursor-pointer">
